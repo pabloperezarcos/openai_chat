@@ -1,0 +1,13 @@
+<div class="chat-container">
+    <h2>ChatGPT</h2>
+    <div class="messages">
+        <p><strong>Usuario:</strong> {{ userMessage }}</p>
+        <p><strong>ChatGPT:</strong> {{ botResponse }}</p>
+    </div>
+
+    <div class="input-container">
+        <input type="text" [(ngModel)]="userMessage" placeholder="Escribe tu mensaje aquí..."
+            (keydown.enter)="sendMessage()" />
+        <button (click)="sendMessage()">Enviar</button>
+    </div>
+</div>
