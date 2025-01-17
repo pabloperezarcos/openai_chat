@@ -1,4 +1,4 @@
-# OpenAI Test Project
+# OpenAI Chat Angular Project
 
 Este proyecto es una implementación de prueba que utiliza la API de OpenAI para integrar un chatbot funcional. La aplicación combina un frontend desarrollado en Angular 19 con un backend en Node.js para manejar las solicitudes a la API de OpenAI. El propósito principal es proporcionar una base para la creación de aplicaciones personalizadas que interactúan con OpenAI de manera eficiente y segura.
 
