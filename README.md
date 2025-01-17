@@ -80,6 +80,7 @@ cd openai_test
 
    ```bash
    npm install
+   npm install bootstrap
    npm install express cors body-parser
    npm install dotenv
    npm install openai@latest
