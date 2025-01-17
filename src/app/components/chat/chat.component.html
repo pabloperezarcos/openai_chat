@@ -1,13 +1,23 @@
-<div class="chat-container">
-    <h2>ChatGPT</h2>
-    <div class="messages">
-        <p><strong>Usuario:</strong> {{ userMessage }}</p>
-        <p><strong>ChatGPT:</strong> {{ botResponse }}</p>
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <img src="ruta-del-logo.png" alt="Logo" class="logo mb-3" />
+        <h1 class="display-4">ChatGPT</h1>
     </div>
-
-    <div class="input-container">
-        <input type="text" [(ngModel)]="userMessage" placeholder="Escribe tu mensaje aquí..."
-            (keydown.enter)="sendMessage()" />
-        <button (click)="sendMessage()">Enviar</button>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="messages mb-4">
+                        <p><strong>Consulta:</strong> {{ userMessage }}</p>
+                        <p><strong>Respuesta:</strong> {{ botResponse }}</p>
+                    </div>
+                    <div class="input-container d-flex">
+                        <input type="text" class="form-control me-2" [(ngModel)]="userMessage"
+                            placeholder="Escribe tu mensaje aquí..." (keydown.enter)="sendMessage()" />
+                        <button class="btn btn-primary" (click)="sendMessage()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
