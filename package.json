@@ -1,5 +1,5 @@
 {
-  "name": "openai-test",
+  "name": "openai-chat",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "compodoc": "npx compodoc -p tsconfig.app.json",
-    "serve:ssr:openai_test": "node dist/openai_test/server/server.mjs"
+    "compodoc": "npx @compodoc/compodoc -p tsconfig.app.json -s",
+    "serve:ssr:openai_chat": "node dist/openai_chat/server/server.mjs"
   },
   "private": true,
   "dependencies": {
